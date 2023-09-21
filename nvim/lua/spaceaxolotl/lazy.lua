@@ -71,10 +71,11 @@ require('lazy').setup({
          'nvim-lua/plenary.nvim'
       }
    },
-   {
-      'folke/todo-comments.nvim',
-   },
-   {
-      'folke/which-key.nvim',
-   }
+   { 'folke/todo-comments.nvim', },
+   { 'folke/which-key.nvim', },
+   {'ThePrimeagen/vim-be-good'},
+   {"akinsho/toggleterm.nvim", version = "*", config = true},
+   { 'github/copilot.vim', lazy = false },
+   { 'nvim-treesitter/nvim-treesitter' },
+   { 'norcalli/nvim-colorizer.lua' }
 })

@@ -15,10 +15,11 @@ start.setup({
 			"██║  ██║██║     ███████╗██║██║  ██║╚██████╔╝██║ ╚████║",
 			"╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝",
 		},
-		highlight = "NonText",
-		default_color = "",
+		highlight="", 
+		default_color = "#DFE0E2",
 		oldfiles_amount = 0,
 	},
+
 	-- name which will be displayed and command
 	body = {
 		type = "mapping",
@@ -29,7 +30,7 @@ start.setup({
 		margin = 10,
 		content = {
          -- TODO: change <C-e> to something that works
-			{ " Harpoon", "<C-e>",     "Ctrl e" },
+			{ " Harpoon", "Harpoon quick_menu",     "Ctrl e" },
 			{ " File Browser", "Telescope file_browser",      "SPC d" },
 			{ " New File", "lua require'startup'.new_file()", "SPC n f" },
          { " Close Neovim", "quit",                        "SPC q" }
@@ -38,6 +39,7 @@ start.setup({
 		default_color = "",
 		oldfiles_amount = 10,
 	},
+
 	footer = {
 		type = "text",
 		oldfiles_directory = false,
@@ -66,8 +68,8 @@ start.setup({
 		open_help = "?",
 	},
 	colors = {
-		background = "#1f2227",
-		folded_section = "#56b6c2",
+		background = "#1a1a1c", --#1f2227
+		folded_section = "#DFE0E2", --#56b6c2
 	},
 	parts = { "header", "body", "footer" },
 })

@@ -29,9 +29,9 @@ opt.numberwidth = 1
 --opt.scrolloff = 3
 
 -- indenting --
-opt.tabstop = 3
-opt.softtabstop = 3
-opt.shiftwidth = 3
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
 
